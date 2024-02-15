@@ -13,14 +13,16 @@ export function Home() {
         Quarta-feira, 14 de fevereiro de 2024.
       </Text>
 
-      <TextInput
-        style={styles.input}
-        placeholder="Nome do participante"
-        placeholderTextColor="#6b6b6b"
-      />
-      <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
-        <Text style={styles.buttonText}>+</Text>
-      </TouchableOpacity>
+      <View style={styles.form}>
+        <TextInput
+          style={styles.input}
+          placeholder="Nome do participante"
+          placeholderTextColor="#6b6b6b"
+        />
+        <TouchableOpacity style={styles.button} onPress={handleParticipantAdd}>
+          <Text style={styles.buttonText}>+</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 }
